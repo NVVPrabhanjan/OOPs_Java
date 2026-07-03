@@ -1,0 +1,13 @@
+Polymorphism is the third pillar of Object-Oriented Programming (OOP).
+
+The word Polymorphism comes from two Greek words:
+Poly = Many
+Morph = Forms
+
+So,
+Polymorphism means "one thing having many forms."
+
+In Java, the same method name can behave differently depending on the situation.
+
+1. Compile Time Polymorphism: Method Overloading 
+2. Runtime Polymorphism: Method Overriding

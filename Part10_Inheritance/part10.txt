@@ -1,0 +1,53 @@
+Inheritance is the second pillar of Object-Oriented Programming (OOP).
+
+It allows one class to inherit the properties and methods of another class, promoting code reuse and creating an IS-A relationship.
+
+Syntax
+class ChildClass extends ParentClass {
+
+    // Child properties and methods
+}
+Here:
+
+ParentClass = SuperClass (the one whose properties are inherited)
+ChildClass = SubClass (the one that inherits)
+Keywords: extends / inherits / uses
+
+1. Single Inheritance 
+Animal
+   │
+ Dog
+// Refer SingleInheritance.java
+// Refer Main.java
+
+2. Multilevel Inheritance
+Animal
+   │
+ Dog
+   │
+Puppy
+// Refer MultilevelInheritance.java
+
+3. Hierarchical Inheritance
+     Animal
+    /    \   
+   Dog    Cat 
+  /    \  /  \  
+Puppy  Poodle Corgi  Kitten
+// Refer HierarchicalInheritance.java
+
+4. Multiple Inheritance
+Java does NOT support multiple inheritance through classes.
+
+  Animal
+  /    \  
+Dog    Cat
+   \    /
+    ???
+    
+
+Java does NOT support multiple inheritance through classes.
+
+Constructor and Inheritance
+Constructors are not inherited.
+// Refer ConstructorInheritance.java

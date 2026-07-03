@@ -1,0 +1,148 @@
+Encapsulation is the first pillar of Object-Oriented Programming (OOP) and one of the most important concepts in Java.
+
+Encapsulation is the process of wrapping data (variables) and methods (functions) into a single unit (class) 
+while restricting direct access to the data.
+
+How can Encapsulation acheived ?
+
+Step1: Make variables
+private
+
+Step2: Provide Public methods
+getters and setters
+
+Private variables cannot be accessed outside the class.
+Getters and setters - These methods provide controlled access.
+Eg : Getter (To get the value)
+     Setter (To set the value)
+
+class Student {
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+Outside classes cannot directly access name or age.
+
+
+Validation Using Encapsulation
+
+Read-Only Class
+
+class Employee {
+
+    private String empName;
+    private int empId;
+    private String empDept;
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public String getEmpDept() {
+        return empDept;
+    }
+}
+
+Write-Only Class
+
+class BankAccount {
+
+    private double balance;
+
+    public void setBalance(double balance) {
+        if (balance > 0) {
+            this.balance = balance;
+        }
+    }
+}
+
+Fully Encapsulated Class
+
+class Car {
+
+    private String carBrand;
+    private String carModel;
+    private int carYear;
+    private double carPrice;
+
+    public String getCarBrand() {
+        return carBrand;
+    }
+
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
+    }
+
+    public String getCarModel() {
+        return carModel;
+    }
+
+    public void setCarModel(String carModel) {
+        this.carModel = carModel;
+    }
+
+    public int getCarYear() {
+        return carYear;
+    }
+
+    public void setCarYear(int carYear) {
+        if (carYear > 1885 && carYear < 2026) {
+            this.carYear = carYear;
+        }
+    }
+
+    public double getCarPrice() {
+        return carPrice;
+    }
+
+    public void setCarPrice(double carPrice) {
+        if (carPrice > 0) {
+            this.carPrice = carPrice;
+        }
+    }
+}
+
+Immutable Class
+
+class Person {
+
+    private final String name;
+    private final int age;
+
+    public Person(String name, int age) {
+
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+Advantages of Encapsulation
+1. Better Security
+2. Data Validation
+3. Flexibility
+4. Better Maintainability
+5. Reusability
+6. Loose Coupling
