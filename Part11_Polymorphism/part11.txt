@@ -11,3 +11,52 @@ In Java, the same method name can behave differently depending on the situation.
 
 1. Compile Time Polymorphism: Method Overloading 
 2. Runtime Polymorphism: Method Overriding
+
+Compile Time Polymorphism
+
+Rules of Method Overloading
+
+Methods must differ in:
+
+Number of parameters
+Type of parameters
+Order of parameters
+
+Can we overload main() method?
+Yes!
+
+// You can have multiple main methods in Java
+
+public static void main(String[] args) {
+    
+}
+
+public static void main(int[] args) {
+    
+}
+
+// Refer Overloadedmain.java
+
+This is the execution flow of the above program
+
+Run Program
+      │
+      ▼
+JVM Starts
+      │
+      ▼
+Looks for
+
+public static void main(String[] args)
+
+      │
+      ├── Found?
+      │      │
+      │      ▼
+      │   Execute it
+      │
+      └── Not Found?
+             │
+             ▼
+     Runtime Error:
+     Main method not found
