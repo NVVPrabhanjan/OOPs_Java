@@ -60,3 +60,74 @@ public static void main(String[] args)
              ▼
      Runtime Error:
      Main method not found
+
+
+Runtime Polymorphism
+
+Rules:
+1. Same method name
+2. Same parameters
+3. Same return type (or covariant return type)
+4. Same inheritance hierarchy
+
+Cannot override
+
+1. Final methods
+2. Static methods (they are hidden, not overridden)
+3. Private methods
+
+Runtime Polymorphism is also called as
+→ Dynamic Binding
+→ Late Binding
+→ Method Overriding
+
+
+Upcasting
+Converting child reference into parent reference.
+
+Dog d = new Dog();
+Animal a = d;
+
+This is called Upcasting
+
+Why Upcasting?
+Allows one reference to point to different child objects.
+Animal animals[] = {
+
+    new Dog(),
+
+    new Cat(),
+
+    new Cow()
+};
+
+
+for(Animal a : animals)
+      a.sound();
+
+Output :
+Bark
+Meow
+Moo
+
+Very Powerful
+
+
+Downcasting
+Converting parent reference into child reference.
+
+Animal a = new Dog();
+Dog d = (Dog)a;
+
+Explicit cast required.
+
+The below example is Wrong
+
+Animal a = new Animal();
+Dog d = (Dog)a;
+
+Runtime Error
+
+ClassCastException
+
+Because the actual object is not a Dog.

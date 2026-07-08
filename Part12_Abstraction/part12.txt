@@ -1,0 +1,40 @@
+Abstraction is the fourth and final pillar of Object-Oriented Programming (OOP).
+It is one of the most important concepts in Java and is widely used in frameworks like Spring Boot, Hibernate, JDBC, and Collections.
+
+Abstraction is the process of hiding implementation details and showing only the essential features to the user.
+
+How is Abstraction Achieved in Java?
+Java provides two ways:
+Abstraction
+│
+├── Abstract Class
+└── Interface
+
+Abstract Class: An Abstract class is a class declared using the "abstract" keyword.
+It can't be instantiated.
+Because an abstract class is an incomplete blueprint.
+
+Abstract Class Can Have Normal Methods
+Abstract Class Can have Constructors also.
+// Refer AbstractClass.java
+
+
+Abstract classes can contain:
+1. Variables
+2. Constructors
+3. Static methods
+4. Final methods
+5. Concrete methods
+6. Abstract methods
+
+
+Interfaces 
+
+An interface defines a contract that implementing classes must follow.
+It specifies what a class should do, not how it should do it.
+
+By default, interface methods are: public abstract
+Interfaces can contain default methods.
+Interfaces can contain static methods also.
+Private methods are used to reduce code duplication within default and static
+methods of the interface. 
